@@ -1,0 +1,204 @@
+.shop__title {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.inner-top-content {
+  margin-bottom: 45px;
+}
+.filter {
+  width: 200px;
+}
+.shop-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.filter__form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.filter__form li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 19px;
+  position: relative;
+  padding-left: 45px;
+}
+.filter__form ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+  width: 175px;
+}
+.filter__title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.filter__label {
+  cursor: pointer;
+}
+.filter__label:hover,
+.filter__label:focus {
+  color: #663d15;
+}
+
+.filter__label input[type="checkbox"] + .filter-checkbox-indicator {
+  position: absolute;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  left: 0;
+  top: -1px;
+}
+.filter__label input[type="checkbox"]:checked + .filter-checkbox-indicator::after,
+.filter__label input[type="checkbox"]:checked + .filter-checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  top: 7px;
+  left: 2px;
+}
+.filter__label input[type="checkbox"]:checked + .filter-checkbox-indicator::after {
+  transform: rotate(45deg);
+}
+.filter__label input[type="checkbox"]:checked + .filter-checkbox-indicator::before {
+  transform: rotate(-45deg);
+}
+.filter__label input[type="checkbox"]:focus + .filter-checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.filter__label input[type="radio"] + .filter-radio-indicator {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  top: -1px;
+  left: 0;
+}
+.filter__label input[type="radio"]:checked + .filter-radio-indicator::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  top: 4px;
+  left: 4px;
+}
+.filter__label input[type="radio"]:focus + .filter-radio-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.catalog {
+  width: 700px;
+  min-height: 600px;
+  padding-top: 6px;
+}
+.catalog__item-link {
+  color: #000000;
+}
+.catalog__item-category {
+  text-transform: none;
+}
+.catalog__item-link:hover,
+.catalog__item-link:focus {
+  color: #663d15;
+}
+.catalog__list {
+  list-style: none;
+  width: 700px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  
+}
+.catalog__item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+  width: 220px;
+  min-height: 286px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  
+}
+.catalog__item:nth-child(3n) {
+  margin-right: 0;
+}
+.catalog__item-link {
+  display: flex;
+  flex-direction: column;
+}
+.catalog__item-price {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  line-height: 0;
+}
+.btn-buy {
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  height: 43px;
+  display: table-cell;
+  width: 78px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.pagination-item {
+  margin-right: 7px;
+}
+.pagination-btn {
+  width: 43px;
+  height: 43px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.pagination-btn:hover,
+.pagination-btn:focus,
+.pagination-btn:active {
+background-color: rgb(255, 255, 255);
+color: #000000;
+}
+.item-name {
+  order: 2;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.catalog__item-image {
+  margin: 0;
+  line-height: 0;
+}

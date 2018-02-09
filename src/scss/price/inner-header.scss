@@ -1,0 +1,73 @@
+.inner-header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+.inner-navigation {
+    width: 940px;
+    padding: 0 10px;
+    display: flex;
+    margin: 0 auto;
+}
+.inner-navigation__list,
+.user-innerblock__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.inner-navigation__list {
+    width: 780px;
+}
+.user-innerblock {
+    margin-left: auto;
+    width: 140px;
+}
+.inner-navigation__list a {
+  font-size: 16px;
+}
+.inner-navigation__link,
+.user-innerblock__link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+
+}
+.inner-navigation__link,
+.inner-navigation__logo {
+    padding: 24px 20px;
+}
+.inner-navigation__logo {
+    padding: 21px 20px;
+}
+.inner-navigation__logo img {
+    width: 130px;
+    height: 30px;
+}
+.user-innerblock__link {
+  padding: 24px 20px 24px 53px;
+  position: relative;
+}
+.user-innerblock__link::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 28px;
+  left: 24px;
+  background-image: url("../img/icon-login.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  opacity: 0.3;
+}
+.inner-navigation__list a:hover,
+.inner-navigation__list a:focus,
+.inner-navigation__list a:active,
+.user-innerblock__list a:hover,
+.user-innerblock__list a:focus,
+.user-innerblock__list a:active {
+    background-color: rgb(36, 36, 36);
+}
+.inner-navigation__logo {
+    line-height: 0;
+}

@@ -1,0 +1,121 @@
+.main-footer {
+  color: #ffffff;
+  background-color: rgb(35, 35, 35);
+  background-image: url(../img/footer-texture.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+  // margin-top: 66px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.footer-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+.contacts-wrapper {
+  width: 320px;
+  margin-right: 80px;
+}
+.main-footer__contacts {
+  margin: 0;
+}
+.main-footer__contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.main-footer__contacts a:hover,
+.main-footer__contacts a:focus {
+  text-decoration: none;
+}
+.main-footer__social {
+  text-align: center;
+  width: 140px;
+}
+.social-wrapper {
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social__title {
+  margin-bottom: 15px;
+  display: block;
+}
+.social-button {
+  width: 44px;
+  height: 44px;
+  background-color: rgb(0, 0, 0);
+  margin-right: 4px;
+  margin-bottom: 4px;
+  transition: 
+  background-color 0.5s;
+
+}
+.social-button:nth-child(3n) {
+  margin-right: 0;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: rgb(255, 255, 255);
+
+}
+.social-vk {
+  background-image: url("../img/vk-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-fb {
+  background-image: url("../img/facebook-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-inst {
+  background-image: url("../img/instagram-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-vk:hover,
+.social-vk:focus {
+  background-image: url("../img/vk-black.svg");
+  fill: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-inst:hover,
+.social-inst:focus {
+  background-image: url("../img/instagram-black.svg");
+  fill: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-fb:hover,
+.social-fb:focus {
+  background-image: url("../img/facebook-black.svg");
+  fill: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-footer__copyright {
+  text-align: center;
+  width: 140px;
+  margin-left: auto;
+}
+.copyright__link {
+  margin: 0;
+  width: 140px;
+  box-sizing: border-box;
+  transition: 
+  background-color 0.5s;
+}
+.copyright__link:hover,
+.copyright__link:focus {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+.copyright__title {
+  margin-bottom: 15px;
+  display: block;
+}
+.inner-footer {
+  margin-top: 0;
+}

@@ -1,0 +1,105 @@
+html,body {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.btn {
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  vertical-align: top;
+  padding: 10px 24px;
+  margin-right: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
+}
+.btn.disabled:hover,
+.btn:disabled:hover {
+  opacity: 0.5;
+  background-color: #000000;
+}
+.single-btn {
+  margin-right: 0;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: rgb(130, 96, 63);
+}
+.price-buy {
+  background-color: rgb(230, 230, 229);
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  display: table-cell;
+  font-weight: 700;
+  width: 109px;
+  height: 43px;
+  text-align: center;
+  vertical-align: middle;
+}
+.big-wrapper {
+  background-color: black;
+  background-image: url(../img/background-index.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.inner-big-wrapper {
+  background-color: rgb(248, 245, 242);
+  color: #000000;
+  background-image: url(../img/content-block-texture.png);
+  background-repeat: repeat;
+  background-position: 0 0; 
+}
+@mixin decoration-square() {
+  li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: rgb(0, 0, 0);
+    top: 8px;
+    left: 0;
+  }
+  
+}
+

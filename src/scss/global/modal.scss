@@ -1,0 +1,209 @@
+.modal {
+  position: fixed;
+  box-sizing: border-box;
+}
+.modal-login {
+  display: none;
+  z-index: 2;
+  width: 460px;
+  min-height: 385px;
+  top: 120px;
+  left: 50%;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: #000000;
+  background-color: rgb(248, 245, 242);
+  background-image: url(../img/content-block-texture.png);
+  box-shadow: 0 30px 60px rgba(0, 1, 1, 0.75);
+}
+.modal-login h2 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.login-input,
+.password-input {
+  margin: 0;
+}
+.login-input {
+  margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 40px 8px 15px;
+}
+.restore-password {
+  color: #000000;
+  text-decoration: underline;
+}
+.restore-password:hover,
+.restore-password:focus {
+  text-decoration: none;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="test"]:hover,
+.login-form input[type="password"]:hover {
+  border-color: #663d15;
+}
+.login-password-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.rememb-pass,
+.restore-password {
+  line-height: 20px;
+}
+.rememb-pass {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.rememb-pass:hover,
+.rememb-pass:focus {
+  color: #663d15;
+}
+.btn-inn {
+  width: 100%;
+  margin-right: 0;
+}
+.rememb-pass input[type="checkbox"] + .checkbox-indicator {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rememb-pass input[type="checkbox"]:focus + .checkbox-indicator {
+  border: 2px solid #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.checkbox-indicator:hover {
+  border: 2px solid #663d15;
+}
+.rememb-pass input[type="checkbox"]:checked + .checkbox-indicator::before,
+.rememb-pass input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 7px;
+  left: 1px;
+}
+.rememb-pass input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+.rememb-pass input[type="checkbox"] + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+.modal-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  top: 0;
+  right: -44px;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: rgb(208, 208, 208);
+  position: absolute;
+  left: 2px;
+  top: 12px;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+.modal-map {
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -390px;
+  margin-top: -288px;
+  width: 780px;
+  height: 576px;
+  border: 7px solid #ffffff;
+  box-shadow: 0 30px 60px rgba(0, 1, 1, 0.75);
+  background-color: rgb(248, 245, 242);
+  background-image: url("../img/modal-map.png")
+}
+
+.modal-map iframe {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

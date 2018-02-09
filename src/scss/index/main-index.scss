@@ -1,0 +1,173 @@
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+.advantages__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.advantages__item {
+  width: 300px;
+  text-align: center;
+}
+.advantages__item:nth-child(2) {
+  width: 270px;
+}
+.advantages__title {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 60px;
+  position: relative;
+}
+.advantages__title::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+  margin-bottom: -30px;
+}
+.advantages {
+  margin-bottom: 63px;
+}
+.content-block {
+  background-color: rgb(248, 245, 242);
+  background-image: url("../img/index-shadow-line.png"),
+                    url("../img/content-block-texture.png");
+  background-repeat: no-repeat, repeat; 
+  background-position: center, 0, 0;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  padding: 45px 80px 48px 80px;
+}
+.block2 {
+  padding: 42px 77px;
+}
+
+.content-block h2 {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.news {
+  width: 380px;
+}
+.news__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.news__item p {
+  margin: 0;
+}
+.news__item time {
+  text-transform: none;
+}
+.news__item {
+  margin-bottom: 22px;
+}
+.news__all {
+  margin: 0;
+}
+.gallery {
+  width: 300px;
+}
+.gallery__wrapper-image {
+  width: 300px;
+  height: 260px;
+  position: relative;
+}
+.gallery__image {
+  width: 286px;
+  height: 164px;
+  border: 7px solid #ffffff;
+}
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  margin: 0;
+}
+.gallery__prev {
+  bottom: 0;
+  left: 0;
+}
+.gallery__next {
+  bottom: 0;
+  right: 0;
+}
+
+.contacts-block {
+  width: 380px;
+}
+.contacts-block__address,
+.working-hours {
+  margin: 0;
+}
+.contacts-block__address {
+  margin-bottom: 20px;
+}
+.working-hours__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.enroll {
+  width: 300px;
+}
+.enroll__text {
+  margin: 0;
+  margin-bottom: 12px;
+}
+.enroll__form {
+  width: 300px;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.enroll__form p {
+  width: 140;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.enroll__form p:nth-child(2n) {
+  margin-right: 0;
+}
+.enroll__form label {
+  display: block;
+  padding: 0 0 7px 15px;
+}
+.enroll__form input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  width: 140px;
+  height: 43px;
+  padding: 0 15px;
+}
+.enroll__form input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+.enroll__form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
